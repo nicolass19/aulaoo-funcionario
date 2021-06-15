@@ -22,6 +22,6 @@ public class FuncionarioDiarista extends Funcionario{
     }
 
     public float calcularSalario(){
-        return  this.valorDia;
+        return  this.valorDia * this.numDias;
     }
 }

@@ -16,7 +16,9 @@ class FuncionarioDiaristaTest {
     @Test
     void deveCalcularSalario() {
         FuncionarioDiarista funcionarioDiarista = new FuncionarioDiarista();
+        funcionarioDiarista.setGanhoFixo(50.0f);
         funcionarioDiarista.setValorDia(300.0f);
-        assertEquals(300.0f, funcionarioDiarista.calcularSalario());
+        funcionarioDiarista.setNumDias(30);
+        assertEquals(9050.0f, funcionarioDiarista.calcularSalario());
     }
 }
